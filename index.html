@@ -53,17 +53,21 @@
 <!-- pseudocode -->
 
 
-
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
 <link rel="stylesheet" href="cssfiles/main.css">
+<link rel="stylesheet" href="cssfiles/light-dark.css">
 <link rel="canonical" href="https://maevewildes.github.io">
 
 <!-- Dark Mode -->
 <script src="theme.js"></script>
 
-  <link defer rel="stylesheet" href="cssfiles/styledark.css" media="none" id="highlight_theme_dark">
-  <script>
-    initTheme();
-  </script>
+<link defer rel="stylesheet" href="cssfiles/styledark.css" media="none" id="highlight_theme_dark">
+<script>
+  initTheme();
+</script>
 
 
 <!-- GeoJSON support via Leaflet -->
@@ -149,14 +153,21 @@
           
           
             <!-- Toogle theme mode -->
-            <li class="toggle-container">
+            <!-- <li class="toggle-container">
               <button id="light-toggle" title="Change theme">
                 <i class="ti ti-sun-moon" id="light-toggle-system"></i>
                 <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
                 <i class="ti ti-sun-filled" id="light-toggle-light"></i>
               </button>
+            </li> -->
+            <!-- Theme Toggle Button -->
+            <li class="toggle-container">
+              <button id="light-toggle" title="Change theme">
+                <i class="fas fa-sun" id="light-toggle-light"></i>
+                <i class="fas fa-moon" id="light-toggle-dark"></i>
+                <i class="fas fa-adjust" id="light-toggle-system"></i>
+              </button>
             </li>
-          
         </ul>
       </div>
     </div>
