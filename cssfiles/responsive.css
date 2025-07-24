@@ -1,0 +1,68 @@
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make the profile image stack on small screens */
+@media (max-width: 767px) {
+  .profile {
+    float: none !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .profile picture,
+  .profile img {
+    width: 200px !important;
+    height: 200px !important;
+    margin: auto;
+  }
+
+  .post-header h1 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .post .desc {
+    text-align: center;
+  }
+
+  .clearfix {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+
+  nav.navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Slight spacing improvement on all devices */
+body {
+  padding-top: 70px;
+}
+
+/* Ensure footer doesn’t overlap content */
+footer.sticky-bottom {
+  padding-bottom: 1rem;
+}
+
+/* Improve spacing between blocks */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Ensure button toggle icons scale on mobile */
+.toggle-container button i {
+  font-size: 1.2rem;
+}
